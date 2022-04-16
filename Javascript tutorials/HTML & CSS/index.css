@@ -1,0 +1,70 @@
+body {
+    /* background-color: purple; */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+header > p {
+    border-right: 0.25px solid purple;
+    padding: 0px 5px;
+    font-size: 1.25rem;
+}
+
+@media only screen and (min-width:450px) {
+    header > p:last-child {
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    header {
+        flex-direction: column;
+    }
+
+    header > p {
+        border-right: none;
+        border-bottom: 0.25px solid purple;
+        padding: 5px 5px;
+    }
+}
+
+.itemContainer {
+    /* galima rasyti su grid */
+    /* display: grid; */
+    /* grid-template-columns: auto auto auto ; */
+
+    display: flex;
+    flex-direction: row;
+}
+
+.imageContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* galima naudoti 1fr 1fr */
+    grid-template-columns: 1fr 1fr; /* galima naudoti 1fr 1fr */
+}
+
+.imageContainer > img {
+    width: 10rem;
+    height: 5rem;
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .itemContainer {
+        flex-direction: column;
+        /* jei naudojam grid */
+        /*grid-template-columns: auto; /* 1fr irgi galima naudoti */
+    }
+
+    .imageContainer {
+        grid-template-columns: auto;
+        justify-content: center;
+        /* arba jei naudojam flex */
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+}
+

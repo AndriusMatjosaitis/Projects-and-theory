@@ -1,0 +1,40 @@
+.content {
+  background-color: green;
+  color: white;
+}
+.content-section {
+  height: 500px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body {
+  background-color: #ffeeec;
+}
+
+.navbar {
+  font-size: 20px;
+  line-height: 30px;
+}
+.navbar ul {
+  list-style-type: none;
+}
+.navbar-link {
+  color: green;
+}
+.navbar-link:hover {
+  color: yellow;
+}
+.navbar-link:active {
+  color: blue;
+}
+@media screen and (max-width: 480px) {
+  .navbar {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+
+/*# sourceMappingURL=sass.css.map */

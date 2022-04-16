@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4 sidebar pt-5">
+      <h2>BUDGET APP</h2>
+      <div class="list-group list-group-flush">
+        <a class="list-group-item list-group-item-action p-3" routerLink="/" routerLinkActive="active">Home</a>
+        <a class="list-group-item list-group-item-action p-3" routerLink="/expenses" routerLinkActive="active">Expenses</a>
+        <a class="list-group-item list-group-item-action p-3" routerLink="/budgets" routerLinkActive="active">Budgets</a>
+        <a class="list-group-item list-group-item-action p-3" routerLink="/data-from-expenses-service" routerLinkActive="active">Data from service</a>
+      </div>
+    </div>
+    <div class="col-8 pt-5">
+      <div class="row">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

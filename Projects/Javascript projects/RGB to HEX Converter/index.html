@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <label for="rgb-input">RGB value: </label>
+    <input
+      type="text"
+      id="rgb-input"
+      placeholder="Input RGB"
+      value=""
+    /><br /><br />
+    <label for="hex-output">HEX value: </label>
+    <input
+      type="text"
+      id="hex-value"
+      disabled
+      placeholder="HEX value"
+    /><br /><br />
+    <input type="button" value="Convert" onclick="convertRGBtoHEX()" />
+  </body>
+</html>

@@ -1,0 +1,245 @@
+/* 
+body {
+    font-family: Verdana, Arial, Tahoma, Serif;
+}
+ */
+
+
+/* liko padaryti: fontai, spalvos, background spalvos, padding, marginai */
+/* 
+header {
+	display: flex;
+	flex-direction: row;
+}
+ */
+
+/* PAGE */
+body {
+background-color: rgb(149, 90, 197);
+height: 100vh;
+}
+
+h1 {
+    margin-left: 10px;
+}
+/* div1 */
+.wrapperContainer {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(69, 91, 109);
+}
+
+/* div2 */
+.wrapperMainContainer {
+    flex-grow: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+/* div4 */
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    
+}
+
+.menuList {
+    background-color: red; 
+    /* background: rgb(69, 91, 109); */
+    color: whitesmoke;
+    justify-content: left;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.menuListItem {
+    background-color:rgb(46, 156, 224);
+    color: whitesmoke;
+    padding: 10px 10px 10px 20px;
+    border-bottom:rgb(69, 91, 109) solid 1px;
+    margin: 0;
+}
+
+.subMenuList {
+    /* background-color: lightskyblue;  */
+    background: rgb(69, 91, 109);
+    color: whitesmoke;
+    justify-content: left;
+    list-style-type: none;
+    padding: 0;
+    margin-left: -20px;
+    
+    margin-top: 1px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+}
+
+.subMenuListItem {
+    /* background-color: grey; */
+    padding: 10px 20px 10px 40px;
+    /* margin-right: -10px; */
+    list-style-type: none;
+    
+}
+
+/* div5 */
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 5 1 0;
+    background-color: royalblue;
+    /* overflow-x: auto;  */
+    overflow: ; /*Add vertical scrollbar*/
+    
+}
+
+div.contentContainer p {
+    margin-left: 10px;
+}
+
+.contentContainer > h3{
+    margin-left: 10px;
+}
+
+/* Image Container */
+.imageContainer {
+    margin-left: 10px;
+}
+
+
+/* div3 */
+.footerContainer {
+    background-color: blue;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    
+}
+
+.listFooterMenu {
+    list-style-type: none;
+}
+
+.listFooterMenu > li {
+    padding: 10px 20px 10px 20px;
+
+}
+
+/* Table formating */
+table {
+    text-align: center;
+}
+
+th {
+    background-color: rgb(41, 74, 173);
+    color: lightblue;
+    width: auto;
+    padding: 10px 20px 10px 20px;
+}
+
+.evenRow{
+    background-color: rgb(130, 157, 236);
+    color: black;
+    width: auto;
+    padding: 10px 20px 10px 20px;
+        
+}
+
+.oddRow{
+    background-color: royalblue;
+    color: black;
+    width: auto;
+    padding: 10px 20px 10px 20px;
+    
+}
+
+
+
+
+/* Responsive layout  */
+@media only screen and (max-width: 450px){
+    .contentContainer {
+        display: flex;
+        flex-shrink: initial;
+        
+    }
+}
+
+
+
+/*  
+header > p {
+	border-right: 0.25px solid black;
+	padding:0px 5px;
+	font-size: 1.25rem;
+}
+
+@media only screen and (min-width: 450px){
+	header > p:last-child {
+    border: none;
+    }
+}
+
+@media only screen and (max-width: 450px){
+	header {
+		flex-direction: column;
+	}
+header > p {
+	    border-right: none;
+	    border-bottom: 0.25px solid black;
+	    padding: 5px 5px;
+    }   
+}
+
+.itemContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+    /* 
+    display:flex;
+    flex-direction:row;
+    */
+
+    /*  
+}
+.imageContainer {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+}
+
+.imageContainer > img{
+    display: grid;
+    width: 10rem;
+    height: 8rem;
+    background-color: white;
+}
+
+
+@media only screen and (max-width: 450px){
+    .itemContainer {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        font-size: 0.5rem;
+        
+    }
+        
+}
+
+@media only screen and (max-width: 600px){
+    .imageContainer {
+        display: grid;
+        grid-template-columns: auto;
+        
+    }
+        
+}

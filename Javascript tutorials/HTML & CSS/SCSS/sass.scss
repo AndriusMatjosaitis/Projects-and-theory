@@ -1,0 +1,75 @@
+@use "colors" as c;
+
+@mixin media($breakpoint) {
+    @if $breakpoint == $mobile-breakpoint {
+        @media screen and (max-width: $breakpoint) {
+            @include font-size-line-height($small);
+        }    
+
+    } @else if $breakpoint == $tablet-breakpoint {
+        @media screen and (max-width: $breakpoint) {
+            @include font-size-line-height($medium); 
+        }
+    } @else if $breakpoint == $laptop-breakpoint {
+        @media screen and (max-width: $breakpoint) {
+            @include font-size-line-height($large);
+            
+        }
+    }
+    
+}
+
+@mixin ellipses($max-width) {
+    max-width: $max-width;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin font-size-line-height ($font-size) {
+    font-size: $font-size;
+    line-height: 1.5*$font-size;
+}
+$large: 30px;
+$medium: 20px; 
+$small: 10px;    
+$mobile-breakpoint: 480px;
+$tablet-breakpoint: 768px;
+$laptop-breakpoint: 1024px;
+
+.content {
+    background-color: c.$primary-color;
+    color:white;
+    &-section {
+        height: 500px;
+        @include ellipses (200px);
+        
+
+    }
+    
+} 
+body {
+    background-color: c.$primary-background-color;
+}
+.navbar {
+    ul {
+        list-style-type: none;
+    }    
+
+    &-link {
+        color: c.$primary-color;   
+        &:hover {
+            color: c.$hover-color;
+        }            
+        &:active {
+            color: c.$active-color;
+        }          
+    }
+    @include font-size-line-height($medium);
+    @include media($mobile-breakpoint);
+    
+}   
+
+
+
+        

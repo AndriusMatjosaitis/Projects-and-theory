@@ -1,0 +1,9 @@
+<div *ngIf=" expense$ | async as value else template">
+  <h2>{{value.name}}</h2>
+  <p>id: {{value.id}}</p>
+  <p>Amount: {{value.amount}}</p>
+  <p>Date: {{value.date}}</p>
+</div>
+<ng-template #template>
+  <p>Expense with id {{id}} not found</p>
+</ng-template>

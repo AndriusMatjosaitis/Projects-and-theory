@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/IdeaProjects.iml" filepath="$PROJECT_DIR$/.idea/IdeaProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP/OOP.iml" filepath="$PROJECT_DIR$/OOP/OOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/academy22/academy22.iml" filepath="$PROJECT_DIR$/academy22/academy22.iml" />
+      <module fileurl="file://$PROJECT_DIR$/it.academy.java.basics/it.academy.java.basics.iml" filepath="$PROJECT_DIR$/it.academy.java.basics/it.academy.java.basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lt.itacademy.java.basics/lt.itacademy.java.basics.iml" filepath="$PROJECT_DIR$/lt.itacademy.java.basics/lt.itacademy.java.basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-calculator/src/main/main.iml" filepath="$PROJECT_DIR$/java-calculator/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pirmas/pirmas.iml" filepath="$PROJECT_DIR$/pirmas/pirmas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-calculator/src/test/test.iml" filepath="$PROJECT_DIR$/java-calculator/src/test/test.iml" />
+    </modules>
+  </component>
+</project>
